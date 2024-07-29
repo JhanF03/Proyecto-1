@@ -1,0 +1,82 @@
+:root {
+    --colorPrincipal: #54BF8D;
+    --colorSecundario: #D5F2E5;
+    --colorelementos: #63A687;
+}
+
+.sidebar {
+    height: 60%;
+    width: 100%;
+    color: white;
+}
+
+.sidebar a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    display: block;
+    font-size: 16px;
+}
+
+/*BTN OPERACIONES*/
+#op-main {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+
+.sidebar a:hover {
+    background-color: var(--colorSecundario);
+    color: black;
+}
+
+.sidebar .submenu a {
+    padding-left: 35px;
+    font-weight: bold;
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+}
+
+.submenu a #txt {
+    width: 65%;
+    height: 100%;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.submenu a #ico {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.submenu {
+    overflow: hidden;
+    height: 0;
+    transition: height 0.1s ease-out;
+}
+
+.submenu.show {
+    height: auto;
+}
+
+.submenu a {
+    cursor: pointer;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.submenu.show a {
+    opacity: 1;
+    transform: translateY(0);
+}

@@ -1,0 +1,53 @@
+:root{
+    --colorPrincipal: #54BF8D;
+    --colorSecundario: #D5F2E5;
+    --colorelementos: #63A687;
+}
+
+#dropdownMenu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 8px 8px 8px 8px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 50vh;
+    overflow-y: auto;
+    max-height: 50vh;
+    color: black;
+}
+    #dropdownMenu label input{
+        color: black;
+        min-width: 0;
+    }
+#dropdownMenu label {
+    display: block;
+    padding: 5px;
+    font-size: 9px;
+    display: flex;
+    justify-content: start;
+    gap: 1em;
+    align-items: center;
+}
+#dropdownMenu label:hover {
+    background-color: #f1f1f1;
+}
+#content-close{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    #content-close a{
+        width: 50%;
+        height: 5vh;
+        color: white;
+        background: var(--colorPrincipal);
+        border-radius: 0.5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }

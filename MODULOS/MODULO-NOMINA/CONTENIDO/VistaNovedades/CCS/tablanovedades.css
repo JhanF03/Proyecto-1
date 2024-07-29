@@ -1,0 +1,100 @@
+
+:root {
+    --colorPrincipal: #54BF8D;
+    --colorSecundario: #D5F2E5;
+    --colorelementos: #63A687;
+}
+#content-data{
+	width: 59%;
+	height: 97%;
+	border-radius: 1vh;
+	background: var(--colorSecundario);
+}
+#form-tablas{
+	width: 100%;
+	height: 100%;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: space-evenly;*/
+}
+#cont-consulta{
+	height: 15%;
+	width: 95%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+	#selector-novedad-tabla{
+		width: 50%;
+		height: 100%;
+		gap: 1em;
+		display: flex;
+		align-items: center;
+		justify-content: end;
+	}
+		#selector-novedad{
+			height: 5vh;
+			width: 20vh;
+		}
+	#consulta-datos{
+		width: 50%;
+		height: 100%;
+		gap: 1em;
+		display: flex;
+		align-items: center;
+		justify-content: end;
+	}
+		#input-dni{
+			height: 5vh;
+			width: 20vh;
+		}
+		#btn-consulta{
+			height: 5vh;
+			width: 15vh;
+			font-size: 100%;
+			font-weight: bold;
+			border: none;
+			border-radius: 0.5vh;
+			color: white;
+			cursor: pointer;
+			background: var(--colorPrincipal);
+		}
+		#btn-consulta:hover{
+			background: var(--colorelementos);
+		}
+#contenedor-tablas{
+	max-width: 95%;
+	max-height: 75%;
+	display: flex;
+	background: white;
+	overflow-y: auto;
+	overflow-x: auto;
+}
+.tabla-consulta-novedades{
+	width: 100%;
+	height: 100%;
+}
+.tabla-consulta-novedades table{
+	width: auto;
+	height: 100%;
+}
+.fila-titulo-resultado{
+	width: auto;
+	height: 7vh;
+	background: var(--colorPrincipal);
+	color: white;
+	font-weight: bold;
+}
+
+.consulta-Resultado-Datos{
+	min-width: 40vh;
+	font-size: 13px;
+}
+.tb-resultado-datos{
+	height: 6vh;
+	cursor: pointer;
+}
+.tb-resultado-datos:hover{
+	background: var(--colorSecundario);
+}

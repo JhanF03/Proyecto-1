@@ -1,0 +1,54 @@
+.div-content-novedad{
+	display: none;
+	width: 100%;
+	height: 95%;
+	
+}
+.div-content-novedad form{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	overflow-y: auto;
+}
+
+#ubi-labels-form{
+	width: 100%;
+	height: 80%;
+	overflow-y: auto;
+}
+
+.ipntu-novedades-empleados{
+	height: 5vh;
+	width: 25vh;
+	padding-left: 0.7vh;
+}
+.input-select{
+	height: 5vh;
+	width: 25vh;
+}
+.div-fechas{
+	width: 39%;
+	height: 100%;
+	display: flex;
+	align-items: start;
+	justify-content: center;
+	flex-direction: column;
+}
+.div-fechas span{
+	margin-bottom: 0.3vh;
+	font-size: 12px;
+}
+.div-fechas input{
+	margin-bottom: 1.7vh;
+	width: 100%;
+	height: 5vh;
+}
+
+/*NOVEDADES: RETIRO*/
+#textarea{
+	width: 85%;
+	height: 98%;
+	resize: none;
+	padding: 1vh;
+}

@@ -1,0 +1,53 @@
+.sidebar {
+    height: 60%;
+    width: 100%;
+    color: black;
+}
+.sidebar a {
+    text-decoration: none;
+    /*font-size: 80%;*/
+    font-weight: bold;
+    color: black;
+    display: block;
+}
+/*BTN OPERACIONES*/
+#op-main{
+    width: 100%;
+    height: 8vh;
+    font-size: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /*border-bottom: 1px solid black;*/
+}
+.sidebar a:hover {
+    background-color: #dfdfdf;
+}
+.sidebar .submenu a {
+    padding-left: 35px;
+    font-weight: bold;
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+}
+.submenu a #txt{
+    width: 65%;
+    height: 100%;
+    font-size: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.submenu a #ico{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.submenu {
+    display: none;
+    width: 100%;
+    height: auto;
+}

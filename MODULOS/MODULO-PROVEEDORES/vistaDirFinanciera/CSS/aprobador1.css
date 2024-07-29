@@ -1,0 +1,201 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif,arial;
+	text-decoration: none;
+	font-weight: unset;
+}
+:root{
+	--colorPrincipal: #54BF8D;
+	--colorSecundario: #D5F2E5;
+	--colorelementos: #63A687;
+}
+
+/*Contenedor body*/
+.cont-body{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--colorSecundario);
+
+}
+	.cont-nav{
+		width: 100%;
+		height: 10%;
+		display: flex;
+    	align-items: center;
+    	justify-content: center;
+    	flex-direction: row;
+    	background: var(--colorPrincipal);
+	}
+		.sub-cont-nav{
+			width: 32%;
+			height: 100%;
+			display: flex;
+    		justify-content: space-around;
+    		align-items: center;
+    		flex-direction: row;
+		}
+		#sub-cont-nav1{
+			width: 20%;
+		}
+		#sub-cont-nav2{
+			width: 50%;
+		}
+		#sub-cont-nav2 span{
+			font-weight: bold;
+			font-size: 4vh;
+			color: white;
+		}
+		#sub-cont-nav3{
+			justify-content: end;
+			width: 30%;
+		}
+			.cont-btn-nav3{
+				width: 50%;
+				height: 100%;
+				display: flex;
+		    	align-items: center;
+		    	justify-content: space-around;
+		    	flex-direction: row;
+			}
+				.cont-btn-nav3 a{
+					color: white;
+					font-weight: bold;
+					font-size: 20PX;
+				}
+
+	.cont-ubi-elementos-principales{
+		width: 100%;
+		height: 90%;
+		display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	flex-direction: row;
+	}
+		.nav-lateral{
+			width: 14%;
+			height: 95%;
+			background: var(--colorPrincipal);
+			border-radius: 1vh;
+		}
+			#spaces{
+				height: 15%;
+				width: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+				#spaces span{
+					font-size: 13px;
+					font-weight: bold;
+					color: white;
+				}
+			#cont-menu{
+				height: 50%;
+				width: 100%;
+			}
+		.cont-datos{
+			width: 84%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 1vh;
+		}
+			.cont-tabla-resultado{
+				width: 97.5%;
+				height: 95%;
+				border-radius: 1vh;
+				background: white;
+				overflow: auto;
+			}
+				.cont-tabla-resultado form{
+					width: 100%;
+					height: 100%;
+				}
+				.cont-tabla{
+					height: 90%;
+					width: 100%;
+					max-width: 100%;
+					overflow: auto;
+				}
+					table{
+						width: auto;
+						border-collapse: collapse;
+					}
+						.titulo-tabla-resultado{
+						}
+							.fila-titulo-resultado{
+								height: 10vh;
+								border-bottom: 3px solid grey;
+								background: var(--colorPrincipal);
+								color: white;
+								font-weight: bold;
+							}
+								.consulta-Resultado-Datos{
+									min-width: 35vh;
+									height: 100%;
+								}
+								#menudesplegable{
+									min-width: 10vh;
+								}
+									#icoeye{
+										color: white;
+									}
+								.id{
+									min-width: 15vh;
+								}
+
+								.selectorEstado{
+									width: 25vh;
+									height: 5vh;
+								}
+								#aprobacionparcial{
+									width: 10vh;
+									height: 5vh;
+									padding: 0.5vh;
+								}
+						.tb-resultado-datos{
+							height: 10vh;
+							border-bottom: 1px solid black;
+						}
+				.cont-btn-guardar{
+					height: 10%;
+					width: 100%;
+					display: flex;
+					justify-content: end;
+				}
+					.ubi-btn-guardar{
+						width: 15%;
+						height: 100%;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+					}
+						.ubi-btn-guardar button{
+							width: 55%;
+							height: 65%;
+							font-weight: bold;
+							font-size: 100%;
+							background: var(--colorelementos);
+							border: none;
+							border-radius: 1vh;
+						}
+							.ubi-btn-guardar button span{
+								color: white;
+								font-size: 15px;
+							}
+
+@media (max-width: 900px){
+
+	.nav-lateral{
+		width: 11%;
+	}
+	.cont-datos{
+		width: 89%;
+	}
+}

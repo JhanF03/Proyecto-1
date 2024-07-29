@@ -1,0 +1,274 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif,arial;
+	text-decoration: none;
+	font-weight: unset;
+}
+:root {
+    --colorPrincipal: #54BF8D;
+    --colorSecundario: #D5F2E5;
+    --colorelementos: #63A687;
+}
+
+/*Contenedor body*/
+.cont-body{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--colorSecundario);
+
+}
+	.cont-nav{
+		width: 100%;
+		height: 10%;
+		display: flex;
+    	align-items: center;
+    	justify-content: center;
+    	flex-direction: row;
+    	background: var(--colorPrincipal);
+	}
+		.sub-cont-nav{
+			width: 32%;
+			height: 100%;
+			display: flex;
+    		justify-content: space-around;
+    		align-items: center;
+    		flex-direction: row;
+		}
+		#sub-cont-nav1{
+			width: 20%;
+		}
+		#sub-cont-nav2{
+			width: 50%;
+		}
+		#sub-cont-nav2 span{
+			font-weight: bold;
+			font-size: 4vh;
+			color: white;
+		}
+		#sub-cont-nav3{
+			justify-content: end;
+			width: 30%;
+		}
+			.cont-btn-nav3{
+				width: 50%;
+				height: 100%;
+				display: flex;
+		    	align-items: center;
+		    	justify-content: space-around;
+		    	flex-direction: row;
+			}
+				.cont-btn-nav3 a{
+					color: white;
+					font-weight: bold;
+				}
+
+	.cont-ubi-elementos-principales{
+		width: 100%;
+		height: 90%;
+		display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	flex-direction: row;
+	}
+		.nav-lateral{
+			width: 14%;
+			height: 95%;
+			background: var(--colorPrincipal);
+			border-radius: 1vh;
+		}
+			#spaces{
+				height: 15%;
+				width: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: space-evenly;
+			}
+				#spaces span{
+					font-size: 13px;
+					font-weight: bold;
+					color: white;
+				}
+			#cont-menu{
+				height: 50%;
+				width: 100%;
+			}
+		.cont-datos{
+			width: 84%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius: 1vh;
+		}
+			.cont-tabla-resultado{
+				width: 97.5%;
+				height: 95%;
+				border-radius: 1vh;
+				background: white;
+			}
+				#formularioNomina{
+					width: 100%;
+					height: 100%;
+					display: flex;
+					align-items: center;
+					/*justify-content: space-evenly;*/
+					flex-direction: column;
+				}
+					#contendorFiltros{
+						width: 98%;
+						height: 12%;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						background: var(--colorSecundario);
+						border-radius: 1vh;
+						margin-top: 2vh;
+					}
+						.filtros{
+							width: 32%;
+							height: 100%;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+						}
+							#SelectorTablaNomina{
+								width: 50%;
+								height: 55%;
+								border: none;
+								background: var(--colorPrincipal);
+								color: white;
+								font-weight: bold;
+								font-size: 14px;
+								border-radius: 0.5vh;
+							}
+					.contenedor-tablas{
+						width: 98%;
+						height: 95%;
+						/*display: none;*/
+						margin-top: 2vh;
+					}
+						#contenedor-nomina{
+							width: 100%;
+							height: 100%;
+							overflow-y: auto;
+							overflow-x: auto;
+
+						}
+							#fila-titulo-tabla-nommina{
+								background: var(--colorPrincipal);
+								height: 6vh;
+								color: white;
+								font-weight: bold;
+							}
+								.consulta-Resultado-Datos{
+									min-width: 25vh;
+								}
+#formularioNominaPreNomina{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-direction: row;
+}
+	.contenedor-tablas-preNomina{
+		width: 49%;
+		height: 95%;
+		display: flex;
+	}
+	#formularioupdatenomina{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 1vh;
+		background: var(--colorSecundario);
+	}
+		#updateCamposNomina{
+			width: 95%;
+			height: 99%;
+			display: flex;
+			align-items: center;
+			justify-content: space-evenly;
+			flex-direction: column;
+		}
+			#div-contenedor-inputs-preNomina{
+				width: 100%;
+				height: 83%;
+				display: flex;
+				justify-content: space-evenly;
+				flex-direction: column;
+				background: white;
+				border-radius: 1vh;
+				overflow-y: auto;
+			}
+				#div-update-preNomina{
+					width: 100%;
+					height: 10vh;
+					display: flex;
+					justify-content: space-evenly;
+					align-items: center;/*
+					flex-direction: row;*/
+					flex-shrink: 0;
+				}
+					#contenedor-input-update-preNomina{
+						width: 50%;
+						height: 100%;
+						display: flex;
+						justify-content: space-evenly;
+						align-items: star;
+						flex-direction: column;
+						padding-left: 5vh;
+					}
+						#span-prenomina{
+							font-weight: bold;
+							font-weight: 12px;
+						}
+						#contenedor-input-update-preNomina input{
+							width: 30vh;
+							height: 5vh;
+						}
+			#contenedor-botones-preNomina{
+				width: 100%;
+				height: 12%;
+				display: flex;
+				align-items: center;
+				justify-content: end;
+				background: white;
+				border-radius: 1vh;
+			}
+				#contenedor-btn-actualizar-preNomina{
+					width: 40%;
+					height: 100%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
+					#btn-actualizar-preNomina{
+						width: 55%;
+						height: 70%;
+						border: none;
+						border-radius: 0.7vh;
+						background: var(--colorPrincipal);
+						color: white;
+						font-weight: bold;
+						font-size: 15px;
+						cursor: pointer;
+					}
+					#btn-actualizar-preNomina:hover{
+						background: var(--colorelementos);
+					}
+			
+@media (max-width: 900px){
+
+	.nav-lateral{
+		width: 11%;
+	}
+	.cont-datos{
+		width: 89%;
+	}
+}
