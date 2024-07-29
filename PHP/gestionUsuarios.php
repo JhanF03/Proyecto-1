@@ -19,22 +19,22 @@ if (isset($_POST['usuario']) && isset($_POST['contrasena'])) {
 
             switch ($row['rol']) {
                 case 1:
-                    header("Location: ../../MODULOS/MODULO-PROVEEDORES/vistaDirFinanciera/aprobador1.php");
+                    header("Location: ../MODULOS/MODULO-PROVEEDORES/vistaDirFinanciera/aprobador1.php");
                     break;
                 case 2:
-                    header("Location: ../../MODULOS/MODULO-PROVEEDORES/vistaGerenciaCartagena/aprobador2.php");
+                    header("Location: ../MODULOS/MODULO-PROVEEDORES/vistaGerenciaCartagena/aprobador2.php");
                     break;
                 case 3:
-                    header("Location: ../../MODULOS/MODULO-PROVEEDORES/vistaGerenciaBarranquilla/aprobador3.php");
+                    header("Location: ../MODULOS/MODULO-PROVEEDORES/vistaGerenciaBarranquilla/aprobador3.php");
                     break;
                 case 4:
-                    header("Location: ../../MODULOS/MODULO-PROVEEDORES/VistaOrigenDatos/Origen.php");
+                    header("Location: ../MODULOS/MODULO-PROVEEDORES/VistaOrigenDatos/Origen.php");
                     break;
                 case 6:
-                    header("Location: ../../MODULOS/MODULO-NOMINA/CONTENIDO/VistaNovedades/vistaNovedades.php");
+                    header("Location: ../MODULOS/MODULO-NOMINA/CONTENIDO/VistaNovedades/vistaNovedades.php");
                     break;
                 case 7:
-                    header("Location: ../../MODULOS/MODULO-NOMINA/CONTENIDO/VistaNomina/vistanomina.php");
+                    header("Location: ../MODULOS/MODULO-NOMINA/CONTENIDO/VistaNomina/vistanomina.php");
                     break;
                 default:
                     header("Location: ../CONTENIDO/error-rol.html");
