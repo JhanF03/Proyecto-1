@@ -1,0 +1,260 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif,arial;
+	text-decoration: none;
+	font-weight: unset;
+}
+:root{
+	--colorPrincipal: ;
+	--colorSecundario: ;
+	--texto: ;
+}
+
+/*Contenedor body*/
+.cont-body{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+	.cont-nav{
+		width: 100%;
+		height: 10%;
+		display: flex;
+    	align-items: center;
+    	justify-content: center;
+    	flex-direction: row;
+	}
+		.sub-cont-nav{
+			width: 32%;
+			height: 100%;
+			display: flex;
+    		justify-content: space-around;
+    		align-items: center;
+    		flex-direction: row;
+		}
+		#sub-cont-nav3{
+			justify-content: end;
+		}
+			.cont-btn-nav3{
+				width: 50%;
+				height: 100%;
+				display: flex;
+		    	align-items: center;
+		    	justify-content: space-around;
+		    	flex-direction: row;
+			}
+
+	.cont-ubi-elementos-principales{
+		width: 100%;
+		height: 90%;
+		display: flex;
+    	justify-content: center;
+    	align-items: center;
+    	flex-direction: row;
+	}
+		.nav-lateral{
+			width: 10%;
+			height: 100%;
+			/*background: #dfdfdf;*/
+		}
+		.cont-datos{
+			width: 90%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background: #dfdfdf;
+			border-radius: 1vh;
+		}
+			.ubi-tabla-datos{
+				width: 97.5%;
+				height: 95%;
+				background: white;
+				border-radius: 1vh;
+			}
+				.cont-filtro-importe{
+					height: 10%;
+					width: 100%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					flex-direction: row;
+				}
+					#cont-filtro1{
+						height: 100%;
+						width: 40%;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						flex-direction: row;
+					}
+						#cont-filtro1 form{
+							width: 100%;
+							height: 100%;
+							display: flex;
+							justify-content: space-evenly;
+							align-items: center;
+							flex-direction: row;
+						}
+							.btn-form-importar{
+								width: 25%;
+								height: 55%;
+								font-size: 100%;
+								font-weight: bold;
+								display: flex;
+								align-items: center;
+								justify-content: center;
+								border: 0.7px solid #404040;
+								background: #dfdfdf;
+								color: black;
+								border-radius: 0.5vh;
+								cursor: pointer;
+							}
+					#cont-filtro2{
+						height: 100%;
+						width: 60%;
+					}
+						#cont-filtro2 form{
+							width: 100%;
+							height: 100%;
+							display: flex;
+							justify-content: space-evenly;
+							align-items: center;
+							flex-direction: row;
+						}
+							#cont-filtro2 form span{
+
+							}
+							.datos-a-consultar{
+								width: 20%;
+								height: 55%;
+							}
+							.buttom-consultar{
+								width: 15%;
+								height: 55%;
+								font-size: 100%;
+								font-weight: bold;
+							}
+							#div-btn-clean{
+								width: 6vh;
+								height: 100%;
+								display: flex;
+								align-items: center;
+								justify-content: center;
+							}
+							#limpiar-tabla{
+								color: black;
+								
+							}
+								#limpiar-tabla span{
+									font-size: 30px;
+								}
+								#limpiar-tabla span:hover{
+									font-size: 28px;
+								}
+				.cont-tabla-resultado{
+					height: 90%;
+					width: 100%;
+				    overflow-x: auto;
+				    overflow-y: auto;
+				}
+					table{
+						width: 100%;
+					    border-collapse: collapse;
+					    display: block;
+					    white-space: nowrap;
+					}
+						.titulo-tabla-resultado{
+							/*este es el thead*/
+						}
+							.fila-titulo-resultado{
+								height: 5vh;
+								border: 1px solid grey;
+								font-weight: bold;
+							}
+								.consulta-Resultado-Datos{
+									min-width: 33vh;
+									height: 100%;
+								}
+								#CHECK{
+									min-width: 20VH;
+								}
+								#dato15{
+									min-width: 36vh;
+								}
+								#dato14, #dato16{
+									min-width: 70vh;
+								}
+								#dato5, #dato6, #dato7, #dato19, #dato24, #dato25{
+									min-width: 50vh;
+								}
+						.tb-resultado-datos{
+							height: 5vh;
+						}
+						#sms-nohayregistros{
+							width: 100%;
+						    height: 100%;
+						    position: fixed;
+						    top: 0;
+						    left: 0;
+						    z-index: 10000;
+						    display: flex;
+						    justify-content: center;
+						    align-items: center;
+						}
+							#elementos-sms{
+								height: 15vh;
+    							width: 50vh;
+    							background: grey;
+							    border-radius: 1vh;
+							    border: none;
+							}
+								#span{
+									height: 50%;
+									width: 100%;
+									display: flex;
+									align-items: center;
+									justify-content: center;
+								}
+									#span span{
+										font-size: 3vh;
+										font-weight: bold;
+										color: white;
+									}
+								#btn{
+									height: 50%;
+									width: 100%;
+									display: flex;
+									align-items: center;
+									justify-content: center;
+								}
+									#btn a{
+										width: 15vh;
+										height: 5vh;
+										border-radius: 1vh;
+										font-size: 3vh;
+										color: black;
+										background: white;
+										display: flex;
+										justify-content: center;
+										align-items: center;
+										font-weight: bold;
+									}
+									#btn a:hover{
+										background: #dfdfdf;
+									}
+
+@media (max-width: 900px){
+
+	.nav-lateral{
+		width: 5%;
+	}
+	.cont-datos{
+		width: 95%;
+	}
+}
